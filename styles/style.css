@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+body {
+  background: white;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+@font-face {
+  font-family: Porsche 400;
+  src: url("./assets/fonts/Porsche Next-normal-400-100.ttf");
+}
+@font-face {
+  font-family: Porsche 600;
+  src: url("./assets/fonts/Porsche Next-normal-600-100.ttf");
+}
+@font-face {
+  font-family: Porsche 700;
+  src: url("./assets/fonts/Porsche Next-normal-700-100.ttf");
+}
+@font-face {
+  font-family: Porsche La400;
+  src: url(./assets/fonts/PorscheNextWLa-normal-400-100.ttf);
+}
+@font-face {
+  font-family: Porsche La700;
+  src: url(./assets/fonts/PorscheNextWLa-normal-700-100.ttf);
+}
+
+body,
+input,
+button {
+  font-family: Porsche 400;
+}
+
+button {
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video {
+  z-index: -99;
+  position: absolute;
+  object-fit: cover;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 68vh;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 4rem 1.5rem 4rem;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+}
+.img__menu {
+  width: 1.8rem;
+}
+.header__menu--menu {
+  color: white;
+  background: none;
+  border: none;
+}
+.header__logo {
+  width: 14rem;
+}
+.header__cuenta {
+  width: 2rem;
+}
+.cars__models--img {
+  width: 68vw;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.cars__models {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  top: 40%;
+}
+.logo__taycan {
+  width: 47rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__menu {
+  background: none;
+  border: none;
+  gap: 0.5rem;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 27px;
+  min-width: 116px;
+}
+
+.button__menu:focus::after {
+  position: relative;
+  bottom: -2px;
+  content: "";
+  width: 116px;
+  height: 2px;
+  background-color: black;
+}
+
+.button__menu:hover::after {
+  position: relative;
+  bottom: -2px;
+  content: "";
+  width: 116px;
+  height: 2px;
+  background-color: black;
+}
+
+.button__menu:active::after {
+  position: relative;
+  bottom: -2px;
+  content: "";
+  width: 116px;
+  height: 2px;
+  background-color: black;
+}
+
+.main__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.cars__h3 {
+  margin-top: 2rem;
+  font-family: Porsche La400;
+  font-size: 4rem;
+}
+
+.cars__electrico {
+  margin-top: 0.8rem;
+  font-family: Porsche La400;
+  font-size: 14px;
+  background: rgb(241, 240, 240);
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 3px;
+}
+.pvp__recomendado {
+  margin-top: 1.5rem;
+  font-family: Porsche La700;
+  font-size: 16px;
+}
+.div__buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.div__button {
+  padding: 10px;
+  background: none;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: center;
+}
+.button__modelo {
+  background-color: black;
+  color: white;
+}
+
+.p__cars {
+  text-align: center;
+  font-family: Porsche La400;
+  color: rgb(40, 39, 39);
+  margin-top: 1.6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.p__cars--2 {
+  text-align: start;
+  font-family: Porsche La400;
+  color: rgb(40, 39, 39);
+}
+.panel {
+  margin-top: 8rem;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.img__front {
+  width: 38rem;
+  margin-left: 2rem;
+}
+.izda {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.h1 {
+  font-size: 3.8rem;
+  font-family: Porsche LA400;
+}
+span {
+  font-size: 2rem;
+}
+.a__potencia {
+  font-family: Porsche LA700;
+  color: black;
+}
+.div__button--2 {
+  margin-top: 2rem;
+  padding: 10px;
+
+  background: none;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: center;
+}
+.footer {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.footer__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__logo hr{
+    width: 100%;
+}
+
+.footer__logo--img {
+  width: 14vw;
+  margin: 3rem;
+}
+.lista {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 3rem;
+  font-family: Porsche La400;
+}
+.footer__a {
+  color: white;
+  font-family: Porsche La400;
+}

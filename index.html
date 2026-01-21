@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio84</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="div__video">
+            <video class="video" autoplay loop muted>
+                <source src="./styles/assets/videos/video_fondo.mp4" type="video/mp4" />
+        </div>
+        <nav class="header__nav">
+            <div class="header__menu">
+                <img src="./styles/assets/icons/menu-icon.svg" alt="icono de menú" class="img__menu">
+                <button class="header__menu--menu">Menú</button>
+            </div>
+            <div class="header__logo">
+                <img src="./styles/assets/porsche-logo.svg" alt="logo de Porche" class="img__logo">
+            </div>
+            <div class="header__cuenta">
+                <img src="./styles/assets/icons/user-icon.svg" alt="Icono de entrar en cuenta" class="img__cuenta">
+            </div>
+
+        </nav>
+
+        <div class="logo__taycan">
+            <img class="img__taycan" src="./styles/assets/taycan_logo.svg" alt="Logo de Porsche Taycan">
+
+        </div>
+        <div class="cars__models">
+            <img class="cars__models--img" src="./styles/assets/cars/models/taycan-berlina.avif"
+                alt="imagen de Porsche Taycan Berlina" id="imgModels">
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__menu">
+            <button class="button__menu cars__berlina" data-filter="berlina">Berlina Deportiva</button>
+            <button class="button__menu cars__sport" data-filter="sport">Sport Turismo</button>
+            <button class="button__menu cars__cross" data-filter="cross"> Cross Turismo</button>
+        </div>
+
+        <h2 id="carsNombre" class="cars__h3">Taycan</h2>
+        <h5 class="cars__electrico">Eléctrico</h5>
+        <p id="carsPvp" class="pvp__recomendado">Desde EUR 106.252,00 PVP Recomendado <sup>1</sup></p>
+        <div class="div__buttons">
+            <button class="div__button button__modelo">Cambiar modelo</button>
+            <button class="div__button configurar">Configurar</button>
+            <button class="div__button comprar">Comprar vehículos nuevos y de ocasión</button>
+        </div>
+        <p id="cars__p" class="p__cars">Consumo eléctrico combinado - WLTP* (intervalo modelo): 19,4 – 16,7 kWh/100 km,
+            Consumo eléctrico bajo - WLTP* (intervalo modelo): 16,7 – 14,4 kWh/100 km, Consumo <br> eléctrico medio -
+            WLTP* (intervalo modelo): 16,6 – 13,8 kWh/100 km, Consumo eléctrico alto - WLTP* (intervalo modelo): 17,6 –
+            14,2 kWh/100 km, Consumo eléctrico muy <br> alto - WLTP* (intervalo modelo): 22,8 – 18,2 kWh/100 km,
+            Autonomía eléctrica en ciudad - WLTP* (intervalo modelo): 593 – 824 km, Autonomía eléctrica combinado -
+            WLTP* <br> (intervalo modelo): 520 – 680 km, Emisiones CO2 combinado (Gasolina y BEV)/ combinado ponderado
+            (PHEV) - WLTP* (intervalo modelo): 0 – 0 g/km</p>
+
+        <p class="p__cars"> <sup>1</sup> P.V.P. recomendado para península y Baleares. Incluye transporte, I.V.A. e
+            impuesto de matriculación (IEDMT) calculado al tipo estatal aplicable según las emisiones de CO2 <br> del
+            vehículo. El IEDMT puede variar en función de la Comunidad Autónoma donde se ubique su domicilio. Los
+            precios aquí reflejados pueden sufrir modificaciones, y por tanto no <br> son vinculantes.</p>
+
+        <div class="panel">
+            <section id="izda" class="izda">
+                <h1 class="h1"><span id="carsAceleracion" class="h1">4.8</span> <span>s</span></h1>
+                <p class="p__cars--2 cars__aceleracion--p">Aceleración 0-100 km/h con Launch Control</p>
+                <h1> <span id="carsPotencia" class="h1">300</span>  <span> kw / </span><span id="carsPotenciaCV" class="h1"> 408 </span> <span> cv </span></h1>
+                <p class="p__cars--2 cars__potencia--p">Potencia máxima (kW) / Potencia máxima (CV) <br>
+                    Más detalles sobre el método de medición en <a class="a__potencia" href="www.porsche.com/gtr21">
+                        www.porsche.com/gtr21</a></p>
+                <h1><span id="carsVelocidad" class="h1">230 </span> <span>Km/h</span></h1>
+                <p class="p__cars--2 cars__velocidad--p">Velocidad máxima</p>
+                <div>
+                    <button class="div__button--2 button__detalles">Todos los detalles técnicos</button>
+                </div>
+            </section>
+            <section class="derecha">
+                <img class="img__front" src="./styles/assets/cars/front/frente-taycan-berlina.avif"
+                    alt="Imagen de berlina de frente" id="carsFront">
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img class="footer__logo--img" src="./styles/assets/porsche-logo.svg" alt="logo de porcsche">
+            <hr>
+        </div>
+        <div class="lista">
+            &copy 2025 Posche Ibérica S.A.
+
+            <a class="footer__a" href="/">Aviso Legal</a>
+            <a class="footer__a" href="/">Política de cookies</a>
+            <a class="footer__a" href="/">Política de privacidad</a>
+            <a class="footer__a" href="/">Otros Países</a>
+            <a class="footer__a" href="/">Open Source Software Notice</a>
+            <a class="footer__a" href="/">Sistema de denuncia de irregularidades</a>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script type="module" src="./Js/script.js"></script>
+    
+
+</body>
+
+</html>
