@@ -10,7 +10,8 @@ const coches = {
     aceleracion: 4.8,
     potenciaKW: 300,
     potenciaCV: 408,
-    velocidad: 230
+    velocidad: 230,
+    datos: "Consumo eléctrico combinado - WLTP* (intervalo modelo): 19,4 – 16,7 kWh/100 km, Consumo eléctrico bajo - WLTP* (intervalo modelo): 16,7 – 14,4 kWh/100 km, Consumo <br> eléctrico medio -WLTP* (intervalo modelo): 16,6 – 13,8 kWh/100 km, Consumo eléctrico alto - WLTP* (intervalo modelo): 17,6 –14,2 kWh/100 km, Consumo eléctrico muy <br> alto - WLTP* (intervalo modelo): 22,8 – 18,2 kWh/100 km,Autonomía eléctrica en ciudad - WLTP* (intervalo modelo): 593 – 824 km, Autonomía eléctrica combinado - WLTP* <br> (intervalo modelo): 520 – 680 km, Emisiones CO2 combinado (Gasolina y BEV)/ combinado ponderado (PHEV) - WLTP* (intervalo modelo): 0 – 0 g/km"
   },
   sport: {
     nome: "Taycan Sport Turismo",
@@ -20,7 +21,8 @@ const coches = {
     aceleracion: 4.8,
     potenciaKW: 300,
     potenciaCV: 408,
-    velocidad: 230
+    velocidad: 230,
+    datos: "Consumo eléctrico combinado - WLTP* (intervalo modelo): 20,2 – 17,5 kWh/100 km, Consumo eléctrico bajo - WLTP* (intervalo modelo): 16,9 – 14,6 kWh/100 km, Consumo <br> eléctrico medio -WLTP* (intervalo modelo): 17,0 – 14,1 kWh/100 km, Consumo eléctrico alto - WLTP* (intervalo modelo): 18,3 – 14,8 kWh/100 km, Consumo eléctrico muy <br> alto - WLTP* (intervalo modelo): 24,2 – 19,5 kWh/100 km,Autonomía eléctrica en ciudad - WLTP* (intervalo modelo):  579 – 811 km, Autonomía eléctrica combinado - WLTP* <br> (intervalo modelo): 495 – 651 km, Emisiones CO2 combinado (Gasolina y BEV)/ combinado ponderado (PHEV) - WLTP* (intervalo modelo): 0 – 0 g/km"
   },
   cross: {
     nome: "Taycan 4 Cross Turismo",
@@ -30,7 +32,8 @@ const coches = {
     aceleracion: 4.7,
     potenciaKW: 320,
     potenciaCV: 435,
-    velocidad: 220
+    velocidad: 220,
+    datos: "Consumo eléctrico combinado - WLTP* (intervalo modelo): 21,4 – 18,7 kWh/100 km, Consumo eléctrico bajo - WLTP* (intervalo modelo): 18,9 – 16,7 kWh/100 km, Consumo <br> eléctrico medio -WLTP* (intervalo modelo): 18,4 – 16,1 kWh/100 km, Consumo eléctrico alto - WLTP* (intervalo modelo): 19,6 – 17,1 kWh/100 km, Consumo eléctrico muy <br> alto - WLTP* (intervalo modelo): 25,8 – 22,5 kWh/100 km,Autonomía eléctrica en ciudad - WLTP* (intervalo modelo):   611 – 696 km, Autonomía eléctrica combinado - WLTP* <br> (intervalo modelo): 532 – 614 km, Emisiones CO2 combinado (Gasolina y BEV)/ combinado ponderado (PHEV) - WLTP* (intervalo modelo): 0 – 0 g/km"
   }
 };
 
@@ -39,6 +42,7 @@ const carsNombre = document.getElementById("carsNombre");
 const carsPvp = document.getElementById("carsPvp");
 const imgModels = document.getElementById("imgModels");
 const carsFront = document.getElementById("carsFront");
+const carsP = document.getElementById("carsP");
 
 const botones = document.querySelectorAll(".button__menu");
 
@@ -50,6 +54,7 @@ function botonMostrar(tipo) {
   carsPvp.innerHTML = coche.pvp;
   imgModels.src = coche.imaxeCoche;
   carsFront.src = coche.imaxeFrontal;
+  carsP.textContent = coche.datos;
 
   animarNumeros(coche);
 }
